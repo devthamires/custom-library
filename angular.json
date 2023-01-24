@@ -3,39 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "design-system": {
-      "projectType": "library",
-      "root": "projects/design-system",
-      "sourceRoot": "projects/design-system/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/design-system/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/design-system/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/design-system/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "tsConfig": "projects/design-system/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
-          }
-        }
-      }
-    },
     "storybook": {
       "projectType": "application",
       "root": "stories",
@@ -45,10 +12,42 @@
           "options": {
             "tsConfig": "tsconfig.json",
             "styles": [
-              "projects/design-system/styles.scss",
+              "projects/ui-library/styles.scss",
               "style.scss"
-            ],
-            "scripts": []
+            ]
+          }
+        }
+      }
+    },
+    "ui-library": {
+      "projectType": "library",
+      "root": "projects/ui-library",
+      "sourceRoot": "projects/ui-library/src",
+      "prefix": "ui",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ui-library/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-library/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ui-library/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ui-library/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
           }
         }
       }

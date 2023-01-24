@@ -5,13 +5,13 @@
 /tmp
 /out-tsc
 /bazel-out
-/projects/design-system/node_modules
+/projects/ui-library/node_modules
 
 # Node
 /node_modules
 npm-debug.log
 yarn-error.log
-/projects/design-system/package-lock.json
+/projects/ui-library/package-lock.json
 package-lock.json
 
 # IDEs and editors

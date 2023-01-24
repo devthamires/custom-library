@@ -1,9 +1,6 @@
 {
-  "name": "design-system",
+  "name": "ui-library",
   "version": "0.0.1",
-  "scripts": {
-    "build:sass": "sass src/assets/styles.scss"
-  },
   "devDependencies": {
     "@angular/common": "^15.1.0",
     "@angular/core": "^15.1.0",
