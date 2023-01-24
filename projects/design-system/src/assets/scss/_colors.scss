@@ -1,0 +1,42 @@
+// colors static
+$color-white: #ffffff;
+$color-ghost: #c8cfd6;
+$color-black: #000000;
+$color-light-grey: #eeeeee;
+
+// colors theme
+$color-primary: var(--color-primary);
+$color-primary-light: var(--color-primary-light);
+$color-primary-dark: var(--color-primary-dark);
+$color-on-primary: var(--color-on-primary);
+
+$color-secondary: var(--color-secondary);
+$color-secondary-light: var(--color-secondary-light);
+$color-secondary-dark: var(--color-secondary-dark);
+$color-on-secondary: var(color-on-secondary);
+
+$base: var(--light);
+$base-light: var(--base-light);
+$text_default: var(--text_default);
+$text_light: var(--text_light);
+
+$color-dark: var(--dark);
+$color-danger: var(--danger);
+$color-success: var(--success);
+$color-warning: var(--warning);
+$color-info: var(--info);
+
+// fonts
+$font-primary-regular: var(--font-primary-regular);
+$font-primary-bold: var(--font-primary-bold);
+$font-secondary-title: var(--font-secondary-title);
+$font-secondary-subtitle: var(--font-secondary-subtitle);
+
+::-webkit-scrollbar {
+  width: 1px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}

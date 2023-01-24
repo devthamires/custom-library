@@ -1,0 +1,38 @@
+@import "assets/fonts/fonts";
+
+$color-black: #191c1e;
+$color-white: #fcfcff;
+
+:root {
+  --base: #d2e5f5;
+  --base-dark: #4f616e;
+  --base-light: #ffffff;
+  --on-base: #0b1d29;
+
+  --color-primary: #001e2e;
+  --color-primary-light: #c7e7ff;
+  --color-primary-dark: #00658e;
+  --color-on-primary: $color-white;
+
+  --color-secondary: #1e1635;
+  --color-secondary-light: #e8ddff;
+  --color-secondary-dark: #63597c;
+  --color-on-secondary: $color-white;
+
+  --light: #fcfcff;
+  --dark: #343a40;
+  --info: #767676;
+  --warning: #deab21;
+  --danger: #ba1a1a;
+  --success: #1aa582;
+
+  --text_default: #191c1e;
+  --text_light: #41484d;
+
+  --font-primary-regular: "Roboto-Regular";
+  --font-primary-bold: "Roboto-Bold";
+  --font-secondary-title: "FSJoey-Heavy";
+  --font-secondary-subtitle: "OfficinaSerifStd-Book";
+}
+
+//theme from: https://m3.material.io/theme-builder#/custom

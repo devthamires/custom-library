@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "SimplonNorm-Bold";
+  src: url("SimplonNorm-Bold/SimplonNorm-Bold.eot");
+  src: url("SimplonNorm-Bold/SimplonNorm-Bold.eot?#iefix") format("embedded-opentype"),
+    url("SimplonNorm-Bold/SimplonNorm-Bold.woff2") format("woff2"),
+    url("SimplonNorm-Bold/SimplonNorm-Bold.woff") format("woff"),
+    url("SimplonNorm-Bold/SimplonNorm-Bold.ttf") format("truetype"),
+    url("SimplonNorm-Bold/SimplonNorm-Bold.svg#SimplonNorm-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SimplonNorm-Regular";
+  src: url("SimplonNorm-Regular/SimplonNorm-Regular.eot");
+  src: url("SimplonNorm-Regular/SimplonNorm-Regular.eot?#iefix") format("embedded-opentype"),
+    url("SimplonNorm-Regular/SimplonNorm-Regular.woff2") format("woff2"),
+    url("SimplonNorm-Regular/SimplonNorm-Regular.woff") format("woff"),
+    url("SimplonNorm-Regular/SimplonNorm-Regular.ttf") format("truetype"),
+    url("SimplonNorm-Regular/SimplonNorm-Regular.svg#SimplonNorm-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Roboto-Regular/roboto-v20-latin-regular.eot");
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("Roboto-Regular/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("Roboto-Regular/roboto-v20-latin-regular.woff2") format("woff2"),
+    url("Roboto-Regular/roboto-v20-latin-regular.woff") format("woff"),
+    url("Roboto-Regular/roboto-v20-latin-regular.ttf") format("truetype"),
+    url("Roboto-Regular/roboto-v20-latin-regular.svg#Roboto") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Roboto-Bold/RobotoBold.eot");
+  src: local("Roboto-Bold"), local("Roboto-Bold"), url("Roboto-Bold/RobotoBold.eot?#iefix") format("embedded-opentype"),
+    url("Roboto-Bold/RobotoBold.woff2") format("woff2"), url("Roboto-Bold/RobotoBold.woff") format("woff"),
+    url("Roboto-Bold/RobotoBold.ttf") format("truetype"), url("Roboto-Bold/RobotoBold.svg#Roboto") format("svg");
+}
+
+@font-face {
+  font-family: "FSJoey-Heavy";
+  src: url("FSJoeyHeavy/FSJoey-Heavy.ttf") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("HelveticaNeue/helvetica-neue.ttf") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Museo-300";
+  src: url("Museo/Museo300-Regular.otf") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Museo-500";
+  src: url("Museo/Museo500-Regular.otf") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Museo-700";
+  src: url("Museo/Museo700-Regular.otf") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {font-family: "MuseoSans-300";
+  src: url("MuseoSans-300/44f1d96a0579112e89a76a877b4645f4.eot"); /* IE9*/
+  src: url("MuseoSans-300/44f1d96a0579112e89a76a877b4645f4.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("MuseoSans-300/44f1d96a0579112e89a76a877b4645f4.woff2") format("woff2"), /* chrome、firefox */
+  url("MuseoSans-300/44f1d96a0579112e89a76a877b4645f4.woff") format("woff"), /* chrome、firefox */
+  url("MuseoSans-300/44f1d96a0579112e89a76a877b4645f4.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("MuseoSans-300/44f1d96a0579112e89a76a877b4645f4.svg#MuseoSans-300") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "OfficinaSerifStd-Book";
+  src: url("OfficinaSerifStd-Book/OfficinaSerifStd-Book.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
