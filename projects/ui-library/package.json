@@ -1,14 +1,21 @@
 {
   "name": "ui-library",
-  "version": "0.0.1",
+  "version": "0.0.4",
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json",
+    "postbuild": "copyfiles schematics/collection.json ../../dist/ui-library"
+  },
   "publishConfig": {
     "registry": "http://localhost:4873"
   },
-  "devDependencies": {
+  "ng-add": {
+    "save": "true"
+  },
+  "schematics": "./schematics/collection.json",
+  "peerDependencies": {
     "@angular/common": "^15.1.0",
     "@angular/core": "^15.1.0",
     "bootstrap-icons": "^1.10.3",
     "tslib": "^2.3.0"
-  },
-  "sideEffects": false
+  }
 }
