@@ -1,0 +1,21 @@
+<label *ngIf="label" class="label">
+  {{ label }} <span class="required" *ngIf="isRequired">*</span>
+</label>
+<div
+  class="wrap-input"
+  [class.error]="hasErrors"
+  [class.readonly]="readonly"
+  [class.disabled]="control.disabled"
+>
+  <input
+    [type]="type"
+    [placeholder]="placeholder"
+    class="input"
+    [readonly]="readonly"
+    [formControl]="control"
+  />
+
+  <div class="input-after" *ngIf="icon">
+    <i class="icon {{ icon }}" (click)="onIconClick()"></i>
+  </div>
+</div>

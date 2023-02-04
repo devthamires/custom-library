@@ -1,6 +1,6 @@
 {
   "name": "ui-library",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "build": "tsc -p tsconfig.schematics.json",
     "postbuild": "copyfiles schematics/collection.json ../../dist/ui-library"
