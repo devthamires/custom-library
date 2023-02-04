@@ -1,0 +1,22 @@
+<ng-container *ngIf="hasError()" [ngSwitch]="errorKey">
+  <span *ngSwitchCase="'min'">{{ "min" | translate }} {{ control.errors[errorKey].min }}</span>
+  <span *ngSwitchCase="'max'">{{ "max" | translate }} {{ control.errors[errorKey].max }}</span>
+
+  <span *ngSwitchCase="'required'">{{ "required" | translate }}</span>
+  <span *ngSwitchCase="'requiredtrue'">{{ "required" | translate }}</span>
+
+  <span *ngSwitchCase="'minlength'">{{
+    "minlength" | translate: control.errors[errorKey].requiredLength
+  }}</span>
+
+  <span *ngSwitchCase="'maxlength'">{{
+    "maxlength" | translate: control.errors[errorKey].maxlength
+  }}</span>
+
+  <span *ngSwitchCase="'notMustMatch'">{{ "notMustMatch" | translate }}</span>
+  <span *ngSwitchCase="'mustMatch'">
+    {{ "mustMatch" | translate }}
+  </span>
+  <span *ngSwitchCase="'email'">{{ "email" | translate }}</span>
+  <span *ngSwitchCase="'pattern'">{{ patternError }}</span>
+</ng-container>

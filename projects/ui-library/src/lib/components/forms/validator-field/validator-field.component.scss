@@ -1,0 +1,10 @@
+@import "../../../../assets/scss/settings";
+@import "../../../../assets/scss/reset";
+
+:host {
+  span {
+    font-size: 12px;
+    font-family: $font-primary-regular;
+    color: $color-danger;
+  }
+}
