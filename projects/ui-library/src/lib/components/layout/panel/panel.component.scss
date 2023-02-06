@@ -1,0 +1,50 @@
+@import "../../../../assets/scss/settings";
+@import "../../../../assets/scss/colors";
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  &.bg-gray {
+    background-color: rgba($color: $color-black, $alpha: 0.2);
+  }
+}
+
+.content {
+  position: absolute;
+  height: 100%;
+  z-index: 1000;
+  box-shadow: $box-light-shadow;
+  background-color: white;
+
+  &.gray {
+    background-color: $base-light;
+  }
+
+  &.white {
+    background-color: $color-white;
+  }
+
+  &.fullscreen {
+    width: 100%;
+  }
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+
+  &.bottom {
+    top: initial;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,21 @@
+<div
+  [@fadeInOut]
+  class="backdrop"
+  [ngClass]="{
+    'bg-gray': hasBackground === true
+  }"
+  *ngIf="isActive && hasBackground"
+></div>
+<div
+  [@slideInOut]="orientation"
+  *ngIf="isActive"
+  [ngClass]="{
+    content: true,
+    left: side === 'left',
+    right: side === 'right',
+    bottom: side === 'bottom',
+    fullscreen: fullscreen
+  }"
+>
+  <ng-content></ng-content>
+</div>
