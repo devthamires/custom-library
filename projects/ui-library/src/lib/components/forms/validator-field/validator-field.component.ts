@@ -5,7 +5,7 @@ import { ControlValueAccessorConnector } from '../utils/control-value-accessor-c
 @Component({
   selector: 'ui-validator-field',
   templateUrl: './validator-field.component.html',
-  styleUrls: ['./validator-field.component.css'],
+  styleUrls: ['./validator-field.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,

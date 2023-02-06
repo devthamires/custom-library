@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "lib": "ng build ui-library",
-    "watch": "ng build --watch --configuration development",
+    "watch": "ng build ui-library --watch --configuration development",
     "test": "ng test",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

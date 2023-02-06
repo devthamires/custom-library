@@ -10,7 +10,7 @@
   }}</span>
 
   <span *ngSwitchCase="'maxlength'">{{
-    "maxlength" | translate: control.errors[errorKey].maxlength
+    "maxlength" | translate: control.errors[errorKey].requiredLength
   }}</span>
 
   <span *ngSwitchCase="'notMustMatch'">{{ "notMustMatch" | translate }}</span>

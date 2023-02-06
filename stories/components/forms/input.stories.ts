@@ -50,7 +50,7 @@ export default {
         defaultValue: { summary: 'false' },
       },
     },
-    iconAfter: {
+    icon: {
       control: 'text',
       description: 'icone pós input',
       type: { name: 'string', required: false },
@@ -81,7 +81,7 @@ export default {
         [type]="type"
         [placeholder]="placeholder"
         [readonly]="readonly"
-        [iconAfter]="iconAfter"
+        [icon]="icon"
         (clickedIcon)="onIconClick()"
       >
       </ui-input>
@@ -95,7 +95,7 @@ class InputStoryComponent {
   @ngInput() type = 'text';
   @ngInput() placeholder: string;
   @ngInput() readonly: boolean;
-  @ngInput() iconAfter: string;
+  @ngInput() icon: string;
   form: FormGroup;
   message = 'You must enter a value';
 
@@ -107,8 +107,7 @@ class InputStoryComponent {
         '',
         Validators.compose([
           Validators.required,
-          Validators.minLength(7),
-          Validators.pattern(this.pattern),
+          Validators.minLength(3)
         ]),
       ],
     });
@@ -131,8 +130,6 @@ class InputStoryComponent {
         [readonly]="readonly"
       ></ui-input>
     </form>
-    <br />
-    <div>{{ form.get('input').value }}</div>
   `,
 })
 class InputDisabledStoryComponent {
@@ -155,14 +152,14 @@ const template1: Story<InputComponent> = (args: InputComponent) => ({
     declarations: [InputStoryComponent],
   },
   props: args,
-  template: `<storybook-form  [label]="label" [type]="type" [placeholder]="placeholder" [readonly]="readonly" [iconAfter]="iconAfter"></storybook-form>`,
+  template: `<storybook-form  [label]="label" [type]="type" [placeholder]="placeholder" [readonly]="readonly" [icon]="icon"></storybook-form>`,
 });
 
 export const inputIcon = template1.bind({});
 inputIcon.args = {
   label: 'Busca',
   placeholder: 'Search partner',
-  iconAfter: 'bi-search',
+  icon: 'bi-search',
 };
 
 export const password = template1.bind({});
