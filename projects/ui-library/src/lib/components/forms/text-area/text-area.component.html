@@ -1,0 +1,19 @@
+<label *ngIf="label" class="label">
+  {{ label }} <span class="required" *ngIf="isRequired">*</span>
+</label>
+<div
+  class="wrap-input"
+  [class.error]="hasErrors"
+  [class.readonly]="readonly"
+  [class.disabled]="control.disabled"
+>
+  <textarea
+    [rows]="rows"
+    [cols]="cols"
+    class="input"
+    [placeholder]="placeholder"
+    [readonly]="readonly"
+    [formControl]="control"
+  ></textarea>
+</div>
+<ui-validator-field [formControl]="control"></ui-validator-field>
